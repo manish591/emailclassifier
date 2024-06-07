@@ -1,7 +1,9 @@
+import { Button } from "@/components/ui/button";
+
 export default function Home() {
   return (
     <main>
-      <h1>This is my email classifier application</h1>
+      <Button>This is new Shadcn</Button>
     </main>
   );
 }
