@@ -1,8 +1,16 @@
-import { Navbar } from "@/components/ui/navbar"
+import { getServerSession } from "next-auth"
+import { Navbar } from "@/components/ui/navbar";
+import { redirect } from "next/navigation";
 
-export default function DashboardLayout({ 
+export default async function DashboardLayout({ 
   children 
 }: Readonly<{ children: React.ReactNode }>) {
+  const session = await getServerSession();
+
+  if(!session?.user) {
+    return redirect("/");
+  }
+
   return (
     <>
       <div className="border-b">

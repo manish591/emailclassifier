@@ -41,7 +41,7 @@ const emailData = [
   }
 ];
 
-export default function Dashboard() {
+export default async function Dashboard() {
   return (
     <div className="mt-16">
       <div className="flex gap-4">
