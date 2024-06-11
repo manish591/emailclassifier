@@ -15,10 +15,10 @@ import {
 } from "./sheet";
 
 type EmailCard = {
-  id: number
+  id: string
   title: string,
   description: string,
-  type: string
+  type?: string
 }
 
 
@@ -26,7 +26,7 @@ function EmailCard({ title, description, type }: Readonly<EmailCard>) {
   return (
     <Sheet>
       <SheetTrigger>
-        <Card className="flex items-start text-left">
+        <Card className="flex items-start text-left h-full">
           <CardHeader>
             <CardTitle className="text-xl">{title}</CardTitle>
             <CardDescription>{description}</CardDescription>

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useSession, signIn } from "next-auth/react";
 import { Button } from "@/components/ui/button";
 
-function AuthComponent() {
+function ConditionalButtons() {
   const { data: session } = useSession();
 
   function signinHandler() {
@@ -30,4 +30,4 @@ function AuthComponent() {
   )
 }
 
-export { AuthComponent };
+export { ConditionalButtons };

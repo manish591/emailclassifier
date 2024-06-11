@@ -1,6 +1,6 @@
 import { getServerSession } from "next-auth"
-import { Navbar } from "@/components/ui/navbar";
 import { redirect } from "next/navigation";
+import { Navbar } from "@/components/interactive/navbar";
 
 export default async function DashboardLayout({ 
   children 
