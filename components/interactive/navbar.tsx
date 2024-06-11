@@ -1,6 +1,6 @@
 import { getServerSession } from "next-auth";
-import { Avatar, AvatarFallback, AvatarImage } from "./avatar";
-import { Logout } from "./logout";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Logout } from "@/components/interactive/logout";
 
 async function Navbar() {
   const session = await getServerSession();
